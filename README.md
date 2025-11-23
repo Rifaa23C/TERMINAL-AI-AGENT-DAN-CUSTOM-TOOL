@@ -1,1 +1,2 @@
 # TERMINAL-AI-AGENT-DAN-CUSTOM-TOOL
+Project ini merupakan implementasi AI Agent berbasis terminal yang dapat memahami perintah bahasa natural dan menjalankan custom tools yang dibuat sendiri menggunakan Python. Agent ini terhubung ke API OpenRouter (model Grok) dan mampu memanggil fungsi sesuai kebutuhan user, seperti cek RAM, merapikan folder, konversi suhu, menghitung diskon, dan membaca isi file
