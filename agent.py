@@ -6,15 +6,11 @@ init(autoreset=True)
 from tools import tool_dictionary
 from tool_schema import tool_schema
 
-# API KEY
-a = "sk-or-v1-7995770d42"
-b = "78c5cbb2d0ab4335adf3"
-c = "b69dfff451870ce8"
-d = "9f73cf8b7a9544ce02"
-
-OPENROUTER_API_KEY = a + b + c + d
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-
+# Catatan:
+# API key saya tidak saya tulis di sini untuk alasan keamanan.
+# Program akan mengambil API dari environment variable OPENROUTER_API_KEY.
+import os
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 class LLM_API_AGENT:
     def __init__(self):
@@ -133,3 +129,4 @@ while True:
             break
 
         agent.add_message("user", user_input)
+
